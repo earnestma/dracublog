@@ -1,8 +1,6 @@
 <p>
 	{{ .Site.Copyright }} • <a href="https://git.earne.link/earnestma/dracublog/" target="_blank" rel="noopener">theme</a>
+	{{ if $.GitInfo }}
+	({{ .GitInfo.AbbreviatedHash }})
+	{{ end }}
 </p>
-{{ if $.GitInfo }}
-<p>
-	{{ .GitInfo.AbbreviatedHash }}
-</p>
-{{ end }}
