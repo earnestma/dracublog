@@ -5,11 +5,25 @@
 
 A simple, fully-featured Hugo blogging theme with Dracula colors.
 
-## Setup
+**Demo**: -
+
+## Install
+
+- Git submodule
+
+`git submodule add https://git.earne.link/earnestma/dracublog.git themes/dracublog`
+
+The `main` branch will always point to the latest stable tag. To track the develop branch, you may append this to the `.gitmodules` entry: `branch = develop`
+
+- Release
+
+Regular and minified release tarbells are available: **[here](https://git.earne.link/earnestma/dracublog/releases)** and [on GitHub releases](https://github.com/earnestma/dracublog/releases). Simply uncompress to the themes directory.
+
+## Configuration
 
 ## Contributing
 
-See [contributing.md](contributing.md)
+Please see [contributing.md](contributing.md). This project is licensed under the [MIT License](license.md).
 
 ## Thanks
 
