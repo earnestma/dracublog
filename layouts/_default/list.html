@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+{{ if .Data.Singular }}
+<h2>{{ .Title }}:</h2>
+<p>
+	<a href="{{ "/blog" | relURL }}">Back to posts</a>
+</p>
+{{ else }}
+<h2>{{ .Title }}</h2>
+{{ end }}
+
+{{ .Content }}
+
+<small>
+	<p>Subscribe to the RSS feed for <i>this view</i> by <a href="index.xml">copying this link</a>.</p>
+</small>
+
+<ul>
+	{{ range .Pages }}
+	<li>
+		<span>
+			<i>
+				<time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+					{{ .Date.Format "Jan 02, 2006" }}
+				</time>
+			</i>
+		</span>
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+	</li>
+	{{ else }}
+	<li>
+		<p>No posts yet, check back soon.</p>
+	</li>
+	{{ end }}
+</ul>
+
+{{ if .Data.Singular }}
+{{else}}
+<small>
+	<div>
+		Tags:
+		{{ range .Site.Taxonomies.tags }}
+		<a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
+		{{ end }}
+	</div>
+</small>
+{{ end }}
+
+{{ end }}
