@@ -28,13 +28,12 @@
 	{{ end }}
 </p>
 
-
-<a href="#"><button class="top">Back to top</button></a>
-<!--<a href="sc"><button class="top">Load comments (Mastodon)</button></a>-->
-
+{{ partial "fedi-comments" . }}
 
 {{ if $.Site.Params.openring }}
 {{ partial "openring-out" . -}}
 {{ end }}
+
+<a href="#"><button class="top">Back to top</button></a>
 
 {{ end }}
