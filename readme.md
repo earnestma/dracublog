@@ -7,13 +7,15 @@ A simple, fully-featured Hugo blogging theme with Dracula colors.
 
 **Demo**: -
 
+[My personal site](https://www.earnestma.xyz) uses this theme.
+
 ## Install
 
 - Git submodule
 
 `git submodule add https://git.earne.link/earnestma/dracublog.git themes/dracublog`
 
-The `main` branch will always point to the latest stable tag. To track the develop branch, you may append this to the `.gitmodules` entry: `branch = develop`
+The `main` branch will always point to the latest stable tag. To track the develop branch, you may instead use `git submodule add https://git.earne.link/earnestma/dracublog.git themes/dracublog -b develop`
 
 - Release
 
