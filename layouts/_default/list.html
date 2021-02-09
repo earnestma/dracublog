@@ -17,20 +17,19 @@
 
 <ul>
 	{{ range .Pages }}
-	<li>
-		<span>
-			<i>
-				<time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-					{{ .Date.Format "Jan 02, 2006" }}
-				</time>
-			</i>
-		</span>
+	<li><i>
+			<time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+				{{ .Date.Format "Jan 02, 2006" }}
+			</time></i> –
+	{{- if .OutputFormats.Get "html" }}
 		<a href="{{ .Permalink }}">{{ .Title }}</a>
 	</li>
-	{{ else }}
-	<li>
-		<p>No posts yet, check back soon.</p>
+	{{- else if .OutputFormats.Get "gemtext" }}
+		{{ with .OutputFormats.Get "gemtext" }}
+		<a href="{{ replace .Permalink "/gemini" "" 1 | safeURL }}">{{ end }}{{ .Title }}</a>
+		<small>(<a href="https://www.earnestma.xyz/gemini" target="_blank">what is gemini://?</a>)</small>
 	</li>
+	{{ end }}
 	{{ end }}
 </ul>
 
