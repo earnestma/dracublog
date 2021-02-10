@@ -1,4 +1,4 @@
-# [Dracublog](https://www.earnestma.xyz/dracublog)
+# [Dracublog](https://earnestma.xyz/dracublog)
 
 [![git repo](https://img.shields.io/badge/repo-git-informational.svg?logo=gitea)](https://git.earne.link/earnestma/dracublog)
 [![GitHub mirror](https://img.shields.io/badge/mirror-GitHub-black.svg?logo=github)](https://github.com/earnestma/dracublog)
@@ -16,7 +16,7 @@ Features:
 
 **Demo**: -
 
-[My personal site](https://www.earnestma.xyz) uses this theme.
+[My personal site](https://earnestma.xyz) uses this theme.
 
 ## Install
 
