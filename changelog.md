@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.1 - 2021-02-11
+
+Just minor fixes to tags and links.
+
+earnest ma (3):
+	chore: Use non-WWW links
+	fix! Broken link
+	fix: Leftover </time>
+
 ## 0.3.0 - 2021-02-10
 
 In this release, basic support for output to Gemini was added, as well as Hugo theme metadata and an exampleSite. Improvements are always welcome.
