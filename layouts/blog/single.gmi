@@ -22,9 +22,9 @@ Published on {{ .Date.Format "Jan 02, 2006" }}.
 ```
 
 => / Return to the homepage
-{{ with .OutputFormats.Get "html" }}
+{{- with .OutputFormats.Get "html" }}
 => {{ .Permalink }} See “{{ $.Title | safeHTML }}” on the WWW
-{{ end }}
-{{ with .Params.comments }}=> https://{{ .host }}/@{{ .user }}/{{ .id }} You may comment here{{ end }}
+{{- end }}
+{{- with .Params.comments }}=> https://{{ .host }}/@{{ .user }}/{{ .id }} You may comment here{{ end }}
 
 {{ .Site.Copyright }}
