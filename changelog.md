@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.2 - 2021-03-12
+
+Minor fixes to the Gemini side of things and dependencies.
+
+```
+earnest ma (5):
+      format: Fix whitespace
+      fix: Gemini lastmod and published date
+      fix: Gemini post post links spacing
+      chore(deps): Bump DOMPurify to version 2.2.7
+      chore: Fix changelog
+```
+
 ## 0.3.1 - 2021-02-11
 
 Just minor fixes to tags and links.
