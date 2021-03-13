@@ -4,20 +4,24 @@
 
 Just minor fixes to tags and links.
 
+```
 earnest ma (3):
 	chore: Use non-WWW links
 	fix! Broken link
 	fix: Leftover </time>
+```
 
 ## 0.3.0 - 2021-02-10
 
 In this release, basic support for output to Gemini was added, as well as Hugo theme metadata and an exampleSite. Improvements are always welcome.
 
+```
 earnest ma (4):
 	chore: Bump version
 	feat: Add support for gemini
 	docs: Add exampleSite and theme metadata
 	chore: Update readme.md
+```
 
 ## 0.2.0 - 2021-02-05
 
